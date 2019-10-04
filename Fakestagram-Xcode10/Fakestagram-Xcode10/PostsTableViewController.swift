@@ -17,6 +17,8 @@ struct Post: Codable {
     let createdAt: String
     var liked: Bool
     let location: String
+    //let imagen: UIImage?
+    
 
     func likesCountText() -> String {
         return "\(likesCount) likes"
@@ -113,15 +115,17 @@ class PostsTableViewController: UITableViewController {
      }
      */
 
-    /*
      // MARK: - Navigation
-     
      // In a storyboard-based application, you will often want to do a little preparation before navigation
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
+        if segue.identifier == "detalle"{
+            let det = segue.destination as! PostViewController
+            let indx = self.tableView.indexPathForSelectedRow?.row ?? 0
+            posts[indx].load { img in
+                det.imagen.image = img
+            }
+        }
      }
-     */
 
     func loadPosts(successful: @escaping ([Post]) -> Void) {
         var request = URLRequest(url: URL(string: "https://fakestagram-api.herokuapp.com/api/v1/posts")!)

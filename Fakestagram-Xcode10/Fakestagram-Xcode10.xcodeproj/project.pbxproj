@@ -13,6 +13,7 @@
 		7701BEBB233F1B1C0004C30D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7701BEB9233F1B1C0004C30D /* LaunchScreen.storyboard */; };
 		7701BEC6233F1B1C0004C30D /* Fakestagram_Xcode10Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7701BEC5233F1B1C0004C30D /* Fakestagram_Xcode10Tests.swift */; };
 		7701BED1233F1B540004C30D /* PostsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7701BED0233F1B540004C30D /* PostsTableViewController.swift */; };
+		819F8D39233FC94E0015902F /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819F8D38233FC94E0015902F /* PostViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		7701BEC5233F1B1C0004C30D /* Fakestagram_Xcode10Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fakestagram_Xcode10Tests.swift; sourceTree = "<group>"; };
 		7701BEC7233F1B1C0004C30D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7701BED0233F1B540004C30D /* PostsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsTableViewController.swift; sourceTree = "<group>"; };
+		819F8D38233FC94E0015902F /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				7701BEB7233F1B1C0004C30D /* Assets.xcassets */,
 				7701BEB9233F1B1C0004C30D /* LaunchScreen.storyboard */,
 				7701BEBC233F1B1C0004C30D /* Info.plist */,
+				819F8D38233FC94E0015902F /* PostViewController.swift */,
 			);
 			path = "Fakestagram-Xcode10";
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				819F8D39233FC94E0015902F /* PostViewController.swift in Sources */,
 				7701BED1233F1B540004C30D /* PostsTableViewController.swift in Sources */,
 				7701BEB1233F1B1B0004C30D /* AppDelegate.swift in Sources */,
 			);
