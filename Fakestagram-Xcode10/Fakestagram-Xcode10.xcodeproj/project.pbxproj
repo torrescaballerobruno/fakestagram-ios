@@ -14,6 +14,8 @@
 		7701BEC6233F1B1C0004C30D /* Fakestagram_Xcode10Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7701BEC5233F1B1C0004C30D /* Fakestagram_Xcode10Tests.swift */; };
 		7701BED1233F1B540004C30D /* PostsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7701BED0233F1B540004C30D /* PostsTableViewController.swift */; };
 		819F8D39233FC94E0015902F /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819F8D38233FC94E0015902F /* PostViewController.swift */; };
+		81A605FC234802580020193E /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A605FB234802580020193E /* Credentials.swift */; };
+		81A605FF2348037F0020193E /* Cliente.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A605FE2348037F0020193E /* Cliente.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		7701BEC7233F1B1C0004C30D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7701BED0233F1B540004C30D /* PostsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsTableViewController.swift; sourceTree = "<group>"; };
 		819F8D38233FC94E0015902F /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		81A605FB234802580020193E /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		81A605FE2348037F0020193E /* Cliente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cliente.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 		7701BEAF233F1B1B0004C30D /* Fakestagram-Xcode10 */ = {
 			isa = PBXGroup;
 			children = (
+				81A605FD234803670020193E /* DataSource */,
 				7701BEB0233F1B1B0004C30D /* AppDelegate.swift */,
 				7701BED0233F1B540004C30D /* PostsTableViewController.swift */,
 				7701BEB4233F1B1B0004C30D /* Main.storyboard */,
@@ -86,6 +91,7 @@
 				7701BEB9233F1B1C0004C30D /* LaunchScreen.storyboard */,
 				7701BEBC233F1B1C0004C30D /* Info.plist */,
 				819F8D38233FC94E0015902F /* PostViewController.swift */,
+				81A605FB234802580020193E /* Credentials.swift */,
 			);
 			path = "Fakestagram-Xcode10";
 			sourceTree = "<group>";
@@ -97,6 +103,14 @@
 				7701BEC7233F1B1C0004C30D /* Info.plist */,
 			);
 			path = "Fakestagram-Xcode10Tests";
+			sourceTree = "<group>";
+		};
+		81A605FD234803670020193E /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				81A605FE2348037F0020193E /* Cliente.swift */,
+			);
+			path = DataSource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,7 +216,9 @@
 			files = (
 				819F8D39233FC94E0015902F /* PostViewController.swift in Sources */,
 				7701BED1233F1B540004C30D /* PostsTableViewController.swift in Sources */,
+				81A605FC234802580020193E /* Credentials.swift in Sources */,
 				7701BEB1233F1B1B0004C30D /* AppDelegate.swift in Sources */,
+				81A605FF2348037F0020193E /* Cliente.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
