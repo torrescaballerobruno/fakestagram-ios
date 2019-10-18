@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,8 +17,23 @@
 		7701BED1233F1B540004C30D /* PostsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7701BED0233F1B540004C30D /* PostsTableViewController.swift */; };
 		819F8D39233FC94E0015902F /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819F8D38233FC94E0015902F /* PostViewController.swift */; };
 		81A605FC234802580020193E /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A605FB234802580020193E /* Credentials.swift */; };
-		81A605FF2348037F0020193E /* Cliente.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A605FE2348037F0020193E /* Cliente.swift */; };
-		81F2262C2348F2F4007D0833 /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F2262B2348F2F4007D0833 /* RequestBuilder.swift */; };
+		81A605FF2348037F0020193E /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A605FE2348037F0020193E /* Client.swift */; };
+		81F2262C2348F2F4007D0833 /* RestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F2262B2348F2F4007D0833 /* RestClient.swift */; };
+		E10163F623515D75002DAB71 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10163F523515D75002DAB71 /* Post.swift */; };
+		E10163F823515D8F002DAB71 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10163F723515D8F002DAB71 /* Account.swift */; };
+		E10163FB23515DF3002DAB71 /* HttpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10163FA23515DF3002DAB71 /* HttpResponse.swift */; };
+		E10163FD23515E14002DAB71 /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10163FC23515E14002DAB71 /* RequestBuilder.swift */; };
+		E10163FF23515E3D002DAB71 /* StatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10163FE23515E3D002DAB71 /* StatusCode.swift */; };
+		E1016401235160F0002DAB71 /* RestClientTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1016400235160F0002DAB71 /* RestClientTest.swift */; };
+		E1016404235161EF002DAB71 /* posts.successful.json in Resources */ = {isa = PBXBuildFile; fileRef = E1016403235161EF002DAB71 /* posts.successful.json */; };
+		E101640623516234002DAB71 /* show_post.successful.json in Resources */ = {isa = PBXBuildFile; fileRef = E101640523516234002DAB71 /* show_post.successful.json */; };
+		E1016408235166CB002DAB71 /* CodableSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1016407235166CB002DAB71 /* CodableSerializer.swift */; };
+		E101640C23523B7D002DAB71 /* ShowPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E101640A23523B7D002DAB71 /* ShowPostViewController.swift */; };
+		E101640D23523B7D002DAB71 /* ShowPostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E101640B23523B7D002DAB71 /* ShowPostViewController.xib */; };
+		E101640F2352450F002DAB71 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = E101640E2352450F002DAB71 /* Author.swift */; };
+		E101641123524526002DAB71 /* Like.swift in Sources */ = {isa = PBXBuildFile; fileRef = E101641023524526002DAB71 /* Like.swift */; };
+		E101641323524538002DAB71 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E101641223524538002DAB71 /* Comment.swift */; };
+		E10164152352468F002DAB71 /* AuthorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10164142352468F002DAB71 /* AuthorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,11 +61,26 @@
 		7701BED0233F1B540004C30D /* PostsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsTableViewController.swift; sourceTree = "<group>"; };
 		819F8D38233FC94E0015902F /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		81A605FB234802580020193E /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
-		81A605FE2348037F0020193E /* Cliente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cliente.swift; sourceTree = "<group>"; };
-		81F2262B2348F2F4007D0833 /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
+		81A605FE2348037F0020193E /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		81F2262B2348F2F4007D0833 /* RestClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestClient.swift; sourceTree = "<group>"; };
 		B367D13758CCB1BA41349444 /* Pods-Fakestagram-Xcode10.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fakestagram-Xcode10.release.xcconfig"; path = "Target Support Files/Pods-Fakestagram-Xcode10/Pods-Fakestagram-Xcode10.release.xcconfig"; sourceTree = "<group>"; };
 		D19F834D640BB16AB1AE3DB6 /* Pods-Fakestagram-Xcode10Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fakestagram-Xcode10Tests.release.xcconfig"; path = "Target Support Files/Pods-Fakestagram-Xcode10Tests/Pods-Fakestagram-Xcode10Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D816FF617D70271CC70DB0DB /* Pods_Fakestagram_Xcode10.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fakestagram_Xcode10.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E10163F523515D75002DAB71 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		E10163F723515D8F002DAB71 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		E10163FA23515DF3002DAB71 /* HttpResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpResponse.swift; sourceTree = "<group>"; };
+		E10163FC23515E14002DAB71 /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
+		E10163FE23515E3D002DAB71 /* StatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusCode.swift; sourceTree = "<group>"; };
+		E1016400235160F0002DAB71 /* RestClientTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestClientTest.swift; sourceTree = "<group>"; };
+		E1016403235161EF002DAB71 /* posts.successful.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = posts.successful.json; sourceTree = "<group>"; };
+		E101640523516234002DAB71 /* show_post.successful.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = show_post.successful.json; sourceTree = "<group>"; };
+		E1016407235166CB002DAB71 /* CodableSerializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableSerializer.swift; sourceTree = "<group>"; };
+		E101640A23523B7D002DAB71 /* ShowPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPostViewController.swift; sourceTree = "<group>"; };
+		E101640B23523B7D002DAB71 /* ShowPostViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowPostViewController.xib; sourceTree = "<group>"; };
+		E101640E2352450F002DAB71 /* Author.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
+		E101641023524526002DAB71 /* Like.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Like.swift; sourceTree = "<group>"; };
+		E101641223524538002DAB71 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		E10164142352468F002DAB71 /* AuthorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorView.swift; sourceTree = "<group>"; };
 		E3CB974B3D02696B37420F3D /* Pods-Fakestagram-Xcode10.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fakestagram-Xcode10.debug.xcconfig"; path = "Target Support Files/Pods-Fakestagram-Xcode10/Pods-Fakestagram-Xcode10.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,6 +136,9 @@
 		7701BEAF233F1B1B0004C30D /* Fakestagram-Xcode10 */ = {
 			isa = PBXGroup;
 			children = (
+				E101640923523AE5002DAB71 /* Views */,
+				E10163F923515DAE002DAB71 /* Network */,
+				E10163F423515D52002DAB71 /* Models */,
 				81A605FD234803670020193E /* DataSource */,
 				7701BEB0233F1B1B0004C30D /* AppDelegate.swift */,
 				7701BED0233F1B540004C30D /* PostsTableViewController.swift */,
@@ -122,8 +155,10 @@
 		7701BEC4233F1B1C0004C30D /* Fakestagram-Xcode10Tests */ = {
 			isa = PBXGroup;
 			children = (
+				E1016402235161BF002DAB71 /* casettes */,
 				7701BEC5233F1B1C0004C30D /* RequestBuilderTest.swift */,
 				7701BEC7233F1B1C0004C30D /* Info.plist */,
+				E1016400235160F0002DAB71 /* RestClientTest.swift */,
 			);
 			path = "Fakestagram-Xcode10Tests";
 			sourceTree = "<group>";
@@ -131,8 +166,8 @@
 		81A605FD234803670020193E /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
-				81A605FE2348037F0020193E /* Cliente.swift */,
-				81F2262B2348F2F4007D0833 /* RequestBuilder.swift */,
+				81F2262B2348F2F4007D0833 /* RestClient.swift */,
+				E1016407235166CB002DAB71 /* CodableSerializer.swift */,
 			);
 			path = DataSource;
 			sourceTree = "<group>";
@@ -145,8 +180,49 @@
 				55C15CE6CCEC6374E12B19A9 /* Pods-Fakestagram-Xcode10Tests.debug.xcconfig */,
 				D19F834D640BB16AB1AE3DB6 /* Pods-Fakestagram-Xcode10Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		E10163F423515D52002DAB71 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E10163F523515D75002DAB71 /* Post.swift */,
+				E10163F723515D8F002DAB71 /* Account.swift */,
+				E101640E2352450F002DAB71 /* Author.swift */,
+				E101641023524526002DAB71 /* Like.swift */,
+				E101641223524538002DAB71 /* Comment.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E10163F923515DAE002DAB71 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				81A605FE2348037F0020193E /* Client.swift */,
+				E10163FA23515DF3002DAB71 /* HttpResponse.swift */,
+				E10163FC23515E14002DAB71 /* RequestBuilder.swift */,
+				E10163FE23515E3D002DAB71 /* StatusCode.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		E1016402235161BF002DAB71 /* casettes */ = {
+			isa = PBXGroup;
+			children = (
+				E1016403235161EF002DAB71 /* posts.successful.json */,
+				E101640523516234002DAB71 /* show_post.successful.json */,
+			);
+			path = casettes;
+			sourceTree = "<group>";
+		};
+		E101640923523AE5002DAB71 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E101640A23523B7D002DAB71 /* ShowPostViewController.swift */,
+				E101640B23523B7D002DAB71 /* ShowPostViewController.xib */,
+				E10164142352468F002DAB71 /* AuthorView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +309,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E101640D23523B7D002DAB71 /* ShowPostViewController.xib in Resources */,
 				7701BEBB233F1B1C0004C30D /* LaunchScreen.storyboard in Resources */,
 				7701BEB8233F1B1C0004C30D /* Assets.xcassets in Resources */,
 				7701BEB6233F1B1B0004C30D /* Main.storyboard in Resources */,
@@ -243,6 +320,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1016404235161EF002DAB71 /* posts.successful.json in Resources */,
+				E101640623516234002DAB71 /* show_post.successful.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,11 +397,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				819F8D39233FC94E0015902F /* PostViewController.swift in Sources */,
+				E10163FF23515E3D002DAB71 /* StatusCode.swift in Sources */,
 				7701BED1233F1B540004C30D /* PostsTableViewController.swift in Sources */,
 				81A605FC234802580020193E /* Credentials.swift in Sources */,
-				81F2262C2348F2F4007D0833 /* RequestBuilder.swift in Sources */,
+				81F2262C2348F2F4007D0833 /* RestClient.swift in Sources */,
 				7701BEB1233F1B1B0004C30D /* AppDelegate.swift in Sources */,
-				81A605FF2348037F0020193E /* Cliente.swift in Sources */,
+				E10163FD23515E14002DAB71 /* RequestBuilder.swift in Sources */,
+				E101640C23523B7D002DAB71 /* ShowPostViewController.swift in Sources */,
+				E10163F823515D8F002DAB71 /* Account.swift in Sources */,
+				E101641123524526002DAB71 /* Like.swift in Sources */,
+				E10163FB23515DF3002DAB71 /* HttpResponse.swift in Sources */,
+				E101641323524538002DAB71 /* Comment.swift in Sources */,
+				E10163F623515D75002DAB71 /* Post.swift in Sources */,
+				E1016408235166CB002DAB71 /* CodableSerializer.swift in Sources */,
+				E10164152352468F002DAB71 /* AuthorView.swift in Sources */,
+				E101640F2352450F002DAB71 /* Author.swift in Sources */,
+				81A605FF2348037F0020193E /* Client.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +420,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1016401235160F0002DAB71 /* RestClientTest.swift in Sources */,
 				7701BEC6233F1B1C0004C30D /* RequestBuilderTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -486,7 +577,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = F2BL68NTA5;
+				DEVELOPMENT_TEAM = RMQP856RM3;
 				INFOPLIST_FILE = "Fakestagram-Xcode10/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -505,7 +596,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = F2BL68NTA5;
+				DEVELOPMENT_TEAM = RMQP856RM3;
 				INFOPLIST_FILE = "Fakestagram-Xcode10/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
