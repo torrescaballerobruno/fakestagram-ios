@@ -32,6 +32,7 @@ class PostViewController: UIViewController {
         guard let post = post else { return }
         post.load { img in
             DispatchQueue.main.async {
+                print(img)
                 self.imageView.image = img
             }
         }

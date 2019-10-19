@@ -29,8 +29,12 @@ struct Post: Codable {
     
     func load(_ image: @escaping (UIImage) -> Void) {
         guard let urlString = imageUrl, let url = URL(string: urlString) else { return }
+        print("---------------------------------------------")
+        print(urlString)
+        print("---------------------------------------------")
         DispatchQueue.global(qos: .background).async {
             if let data = try? Data(contentsOf: url), let img = UIImage(data: data) {
+                print(img)
                 DispatchQueue.main.async { image(img) }
             }
         }

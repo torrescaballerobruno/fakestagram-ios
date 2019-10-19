@@ -11,8 +11,8 @@ import UIKit
 
 class AuthorView: UIView {
 
-    var author: Author?{
-        didSet{updateContent()}
+    var author: Author? {
+        didSet{ updateContent() }
     }
     
     private let avatar: UIImageView = {
@@ -61,8 +61,8 @@ class AuthorView: UIView {
     }
     
     func updateContent(){
-        guard let author = author else{return}
-        nameLbl.text = author.name
+        guard let uauthor = author else{return}
+        nameLbl.text = uauthor.name
     }
     
     

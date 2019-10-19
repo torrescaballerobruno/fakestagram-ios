@@ -43,7 +43,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="5oz-JP-MjN" kind="show" identifier="detalle" id="XpT-ew-CFX"/>
+                                    <segue destination="5oz-JP-MjN" kind="show" identifier="showPostSegue" id="XpT-ew-CFX"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
